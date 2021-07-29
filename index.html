@@ -26,11 +26,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Complex</title>
 </head>
 
 <body>
+  <div class="preloader">
+    <video muted playisinline>
+        <source src="video/video.mp4">
+        Ваш браузер не поддерживает HTML5 видео.
+    </video>
+</div>
   <div class="page">
 
     <!-- Header -->
@@ -98,7 +105,7 @@
       <div class="container">
         <div class="intro__inner">
           <div class="intro__inner-left">
-            <h1 class="intro-title">
+            <h1 class="intro-title" data-aos="fade-up">
               ВСЁ ДЛЯ ПРЕВОСХОДНОГО СОСТОЯНИЯ ВАШЕГО АВТОМОБИЛЯ
             </h1>
             <h4 class="intro-suptitle">
@@ -758,6 +765,7 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
