@@ -1872,7 +1872,7 @@ svg.medal1 {
 }
 
 .preloader {
-  background: url('../img/avto-bg.jpg') no-repeat center;
+  background: #000;
   background-size: cover;
   top: 0;
   left: 0;
