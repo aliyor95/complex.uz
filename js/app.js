@@ -123,24 +123,24 @@ setTimeout(() => {
 
     if (browser=="Safari") {
       setTimeout(() => {
-        $('.preloader').fadeOut(600);
+        $('.preloader').fadeOut(500);
 
 
-    }, 500)
+    }, 3500)
 
   }
   
   else {	
     setTimeout(() => {
       $('.preloader video')[0].play()
-      $('.preloader__logo').fadeOut(0)
+      $('.preloader__logo').fadeOut(500)
     }, 500)
   }
       
 
 
   $('.preloader video')[0].onended = () => {
-    $('.preloader').fadeOut(600);
+    $('.preloader').fadeOut(500);
 
   }
 }, 500)
