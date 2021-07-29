@@ -1420,6 +1420,7 @@ svg.medal1 {
         padding: 0;
         width: 200px;
         height: auto;
+        display: none;
     }
 
     .menu {
@@ -1459,7 +1460,6 @@ svg.medal1 {
         padding: 0;
         width: 200px;
         height: auto;
-        display: none;
     }
 
     .nav {
@@ -1787,7 +1787,7 @@ svg.medal1 {
         left: -2%;
         top: 60%;
     }
-    
+
     .mobil-about {
         margin-top: 80px;
     }
