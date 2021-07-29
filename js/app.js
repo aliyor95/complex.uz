@@ -97,7 +97,7 @@ $("#nav_toggle").on("click", function (event) {
 
 
 function browser_name(){
-  var browser_id = navigator.userAgent;    
+  let browser_id = navigator.userAgent;    
   // перечень условий
   if (browser_id.search(/Chrome/) != -1) return 'Google Chrome';
   if (browser_id.search(/Firefox/) != -1) return 'Firefox';
