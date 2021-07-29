@@ -78,11 +78,69 @@ $("#nav_toggle").on("click", function (event) {
   $("#nav").toggleClass("active");
 });
 
+// Init AOS
+(function ($) {
+  "use strict";
+
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }
+  $(window).on("load", function () {
+    aos_init();
+  });
+})(jQuery);
 
 
 
+function browser_name(){
+  var browser_id = navigator.userAgent;    
+  // перечень условий
+  if (browser_id.search(/Chrome/) != -1) return 'Google Chrome';
+  if (browser_id.search(/Firefox/) != -1) return 'Firefox';
+  if (browser_id.search(/Opera/) != -1) return 'Opera';
+  if (browser_id.search(/Safari/) != -1) return 'Safari';
+  if (browser_id.search(/MSIE/) != -1) return 'Internet Explorer';
+  return 'Не определен';
+}
+
+let browser = browser_name();
+    let carouselLength = $('.main-item').length
+
+    if(carouselLength <= 4) {
+        carouselLength = 2
+    } else {
+        carouselLength = 3
+    }
 
 
 
+setTimeout(() => {
+  $('.preloader video').css('opacity', '1')
+
+    if (browser=="Safari") {
+      setTimeout(() => {
+        $('.preloader').fadeOut(600);
 
 
+    }, 3500)
+
+  }
+  
+  else {	
+    setTimeout(() => {
+      $('.preloader video')[0].play()
+      $('.preloader__logo').fadeOut(0)
+    }, 500)
+  }
+      
+
+
+  $('.preloader video')[0].onended = () => {
+    $('.preloader').fadeOut(600);
+
+  }
+}, 500)
