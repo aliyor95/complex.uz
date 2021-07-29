@@ -406,8 +406,8 @@ body {
 }
 
 .slick-prev:before {
-    background: url('../img/prev.png') no-repeat;
-    content: url('../img/prev.png') no-repeat;
+    background: url('../img/prev.png');
+    content: url('../img/prev.png');
 }
 
 .slick-next:before,
@@ -1463,6 +1463,7 @@ svg.medal1 {
         padding: 0;
         width: 200px;
         height: auto;
+        display: none;
     }
 
     .nav {
