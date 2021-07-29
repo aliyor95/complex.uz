@@ -126,7 +126,7 @@ setTimeout(() => {
         $('.preloader').fadeOut(600);
 
 
-    }, 3500)
+    }, 500)
 
   }
   
