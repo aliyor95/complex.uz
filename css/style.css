@@ -1814,6 +1814,7 @@ svg.medal1 {
     .large-title {
         top: -5%;
         font-size: 150px;
+        text-transform: uppercase;
     }
 
     .medal {
