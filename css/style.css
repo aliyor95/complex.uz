@@ -1664,7 +1664,7 @@ svg.medal1 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        height: 100vh;
+        height: 815px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1690,9 +1690,9 @@ svg.medal1 {
         right: 0;
         top: 0;
         z-index: 1;
-        background: #000;
+        background: url('../img/menu-bg.png') no-repeat center;
         text-align: center;
-        height: 100vh;
+        height: 815px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
