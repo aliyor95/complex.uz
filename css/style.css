@@ -804,6 +804,10 @@ body {
     right: 5%;
 }
 
+.catalog .mers {
+    display: none;
+}
+
 .title {
     color: #000;
     font-size: 50px;
@@ -1548,6 +1552,18 @@ svg.medal1 {
     .video-btn img {
         width: 90%;
     }
+
+    .catalog-content {
+        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .catalog-block1,
+    .catalog-block2,
+    .catalog-block3 {
+        margin: 50px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1646,6 +1662,11 @@ svg.medal1 {
 
     .nav__link {
         margin-right: 20px;
+    }
+
+    .intro__catalog-title {
+        font-size: 120px;
+        line-height: 138px;
     }
 }
 
@@ -2052,6 +2073,12 @@ svg.medal1 {
         top: 115%;
     }
 
+    .catalog-block1,
+    .catalog-block2,
+    .catalog-block3 {
+        margin: 20px;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -2209,6 +2236,44 @@ svg.medal1 {
         -webkit-transition: 1s all;
         -o-transition: 1s all;
         transition: 1s all;
+    }
+
+    .intro__catalog-title {
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    .catalog-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .catalog-top {
+        width: 337px;
+        height: 233px;
+    }
+
+    .catalog-middle {
+        height: 150px;
+    }
+
+    .catalog-bottom {
+        margin-bottom: 50px;
+    }
+
+    .catalog .contact-title {
+        margin-top: 30px;
+    }
+
+    .catalog .mers {
+        top: 72%;
+        display: block;
+    }
+
+    .catalog-block1,
+    .catalog-block2,
+    .catalog-block3 {
+        margin: 10px;
     }
 
 }
