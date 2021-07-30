@@ -99,12 +99,12 @@ $("#nav_toggle").on("click", function (event) {
 function browser_name(){
   let browser_id = navigator.userAgent;    
   // перечень условий
-  // if (browser_id.search(/Chrome/) != -1) return 'Google Chrome';
-  // if (browser_id.search(/Firefox/) != -1) return 'Firefox';
-  // if (browser_id.search(/Opera/) != -1) return 'Opera';
-  // if (browser_id.search(/Safari/) != -1) return 'Safari';
-  // if (browser_id.search(/MSIE/) != -1) return 'Internet Explorer';
-  // return 'Не определен';
+  if (browser_id.search(/Chrome/) != -1) return 'Google Chrome';
+  if (browser_id.search(/Firefox/) != -1) return 'Firefox';
+  if (browser_id.search(/Opera/) != -1) return 'Opera';
+  if (browser_id.search(/Safari/) != -1) return 'Safari';
+  if (browser_id.search(/MSIE/) != -1) return 'Internet Explorer';
+  return 'Не определен';
 }
 
 let browser = browser_name();
