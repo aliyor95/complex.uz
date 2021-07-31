@@ -2218,6 +2218,7 @@ svg.medal1 {
 
     .intro__inner-center {
         margin: 40px auto 50px;
+        position: relative;
     }
 
     .intro__inner-center img {
@@ -2230,7 +2231,7 @@ svg.medal1 {
 
     .intro__inner-right {
         position: absolute;
-        left: -1%;
+        left: 0%;
         top: 60%;
     }
 
@@ -2370,6 +2371,14 @@ svg.medal1 {
 
     .mobil-inner {
         margin: 30px auto 60px;
+    }
+
+    .intro-social {
+        z-index: 0;
+    }
+
+    .close {
+        top: 20%;
     }
 
 }
