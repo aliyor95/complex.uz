@@ -84,7 +84,7 @@ $("#nav_toggle").on("click", function (event) {
 
   function aos_init() {
     AOS.init({
-      duration: 500,
+      duration: 1000,
       easing: "ease-in-out",
       once: true,
     });
