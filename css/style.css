@@ -897,6 +897,12 @@ body {
     font-weight: 700;
 }
 
+.intro2 .mers,
+.intro3 .mers,
+.intro4 .mers {
+    display: none;
+}
+
 @media (max-width: 991px) {
     .vid video {
         max-width: 90%;
@@ -2379,6 +2385,12 @@ svg.medal1 {
 
     .close {
         top: 20%;
+    }
+
+    .intro2 .mers,
+    .intro3 .mers,
+    .intro4 .mers {
+        display: none;
     }
 
 }
